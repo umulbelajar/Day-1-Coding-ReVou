@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-rose-500 via-fuchsia-500 to-indigo-600 flex items-center justify-center p-8 font-sans">
+
+    <h1 class="w-full max-w-lg">
+
+        <!-- Page Title -->
+        <div class="text-center mb-6">
+            <h1 class="text-4xl font-bold text-white drop-shadow-lg tracking-wide">✨ Rate Kecantikan</h1>
+            <p class="text-white/70 mt-1 text-sm"></p>
+        </div>
+
+        <!-- Glass Card -->
+        <div class="rounded-3xl border border-white/30 bg-white/15 backdrop-blur-md shadow-2xl p-8">
+            <form action="Post" class="flex flex-col gap-5">
+
+                <!-- Nama -->
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-white/90 text-sm font-medium">👤 Nama</label>
+                    <input
+                        type="text"
+                        placeholder="Masukkan nama kamu..."
+                        class="rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/50 px-4 py-2.5 outline-none focus:ring-2 focus:ring-white/50 transition"
+                    >
+                </div>
+
+                <!-- Checkbox -->
+                <div class="flex items-center gap-3">
+                    <input
+                        type="checkbox"
+                        id="agree"
+                        class="w-4 h-4 rounded accent-fuchsia-300 cursor-pointer"
+                    >
+                    <label for="agree" class="text-white/80 text-sm cursor-pointer">Saya setuju dengan syarat dan ketentuan</label>
+                </div>
+
+                <!-- Password -->
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-white/90 text-sm font-medium">🔒 Password</label>
+                    <input
+                        type="password"
+                        placeholder="Passwordnya donks..."
+                        class="rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/50 px-4 py-2.5 outline-none focus:ring-2 focus:ring-white/50 transition"
+                    >
+                </div>
+
+                <!-- Pesan -->
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-white/90 text-sm font-medium">💬 Pesan</label>
+                    <textarea
+                        rows="4"
+                        placeholder="Tulis pesanmu di sini..."
+                        class="rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/50 px-4 py-2.5 outline-none focus:ring-2 focus:ring-white/50 transition resize-none"
+                    >Pesan untuk Umul</textarea>
+                </div>
+
+                <!-- Fieldset: Tingkat Kecantikan -->
+                <div class="rounded-2xl border border-white/30 bg-white/10 p-4 flex flex-col gap-2">
+                    <p class="text-white font-semibold text-sm mb-1">💅 Tingkat Kecantikan Umul</p>
+                    <label class="text-white/80 text-sm">Apakah Umul Cantik?</label>
+                    <select class="rounded-xl bg-white/20 border border-white/30 text-white px-4 py-2.5 outline-none focus:ring-2 focus:ring-white/50 transition cursor-pointer">
+                        <optgroup label="Kategori Cantik">
+                            <option class="text-black">Cantik Aja</option>
+                            <option class="text-black">Cantik Banget</option>
+                            <option class="text-black">B Aja</option>
+                        </optgroup>
+                        <optgroup label="Kategori Jelek">
+                            <option class="text-black">Jelek</option>
+                            <option class="text-black">Jelek Banget</option>
+                            <option class="text-black">Jelek Aja</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="mt-2 w-full rounded-xl bg-white/25 hover:bg-white/40 active:scale-95 border border-white/40 text-white font-semibold py-3 tracking-wide shadow-lg transition-all duration-200 cursor-pointer"
+                >
+                    🚀 Klik Disini
+                </button>
+
+            </form>
+        </div>
+
+    </h1>
+
+</body>
+</html>
